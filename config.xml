@@ -1,12 +1,17 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.fernandoairescastello.tilerpg" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>TileRPG</name>
+
+<widget id="com.fernandoairescastello.mrlexperiment" 
+    version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+
+    <name>MobileRoguelikeExperiment</name>
     <description>
-        Tile RPG
+        Mobile Roguelike Experiment
     </description>
+
     <author email="fernandoairescastello@gmail.com" href="https://github.com/FernandoAiresCastello">
         Fernando Aires Castello
     </author>
+
     <content src="index.html" />
     <plugin name="cordova-plugin-whitelist" spec="1" />
     <access origin="*" />
@@ -16,11 +21,14 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+
     <platform name="android">
         <allow-intent href="market:*" />
     </platform>
+
     <platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
+
 </widget>

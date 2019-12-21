@@ -6,7 +6,7 @@
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
         <link rel="stylesheet" type="text/css" href="css/index.css">
-        <title>Tile RPG</title>
+        <title>Mobile Roguelike Experiment</title>
     </head>
     <body>
         <script type="text/javascript" src="js/gfx.js"></script>
@@ -16,28 +16,24 @@
 
         <table>
             <tr>
-                <td colspan="3" id="info">
-                    <marquee scrollamount="15">
-                        This is the information area! 
-                        I like to write a lot of things here. 
-                        It scrolls very nice...
-                    </marquee>
+                <td colspan="3" class="text-row">
+                    <div class="text-row-inner">
+                        <marquee scrollamount="15" class="scrolling-text" id="scrolling-text"></marquee>
+                    </div>
                 </td>
             </tr>
             <tr>
-                <td><button id="1">A</button></td>
-                <td><button id="2">&#x25b2;</button></td>
-                <td><button id="3">B</button></td>
+                <td><button id="button-a">A</button></td>
+                <td><button class="invisible">&#x2501;</button></td>
+                <td><button id="button-b">B</button></td>
             </tr>
             <tr>
-                <td><button id="4">&#x25c0;</button></td>
-                <td><button id="5">&nbsp;</button></td>
-                <td><button id="6">&#x25b6;</button></td>
+                <td rowspan="2"><button id="button-left">&#x2190;</button></td>
+                <td rowspan="1"><button id="button-up">&#x2191;</button></td>
+                <td rowspan="2"><button id="button-right">&#x2192;</button></td>
             </tr>
             <tr>
-                <td><button id="7">X</button></td>
-                <td><button id="8">&#x25bc;</button></td>
-                <td><button id="9">Y</button></td>
+                <td><button id="button-down">&#x2193;</button></td>
             </tr>
         </table>
 
