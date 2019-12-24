@@ -13,24 +13,23 @@ let ButtonB;
 
 const Cols = 11;
 const Rows = 11;
-const SmileyCount = 100;
+const TileCount = 100;
 
-const Smiley = 
-    '01111100'+
-    '11111010'+
+const Tile = 
     '11111110'+
-    '11111010'+
-    '11111010'+
-    '11110110'+
-    '01111100'+
+    '11111110'+
+    '11111110'+
+    '11111110'+
+    '11111110'+
+    '11111110'+
+    '11111110'+
     '00000000';
 
 function Main() {
 
     InitButtons();
     InitGraphics(Cols, Rows, 2);
-    PutRandomSmileys();
-    Print('This is a test...');
+    PutRandomTiles();
 }
 
 function InitButtons() {
@@ -55,7 +54,7 @@ function InitButtons() {
 
     setInterval(() => {
         if (ButtonA.pressed) {
-            PutRandomSmileys();
+            PutRandomTiles();
         }
     }, 10);
 }
@@ -64,22 +63,17 @@ function log(text) {
     console.log(text);
 }
 
-function Print(text) {
-    const TextArea = document.getElementById('scrolling-text');
-    TextArea.innerText = text;
-}
-
-function PutRandomSmileys() {
+function PutRandomTiles() {
     
     Cls();
 
-    for (var i = 0; i < SmileyCount; i++) {
+    for (var i = 0; i < TileCount; i++) {
 
         const x = Random(0, Cols);
         const y = Random(0, Rows);
         const color = Random(0, Palette.length);
 
-        DrawTile(x, y, Palette[color], BackColor, Smiley);
+        DrawTile(x, y, Palette[color], BackColor, Tile);
     }
 
     //DrawGrid();

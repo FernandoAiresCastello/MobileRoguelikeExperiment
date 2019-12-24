@@ -85,12 +85,6 @@ function DrawGrid() {
     Canvas.stroke();
 }
 
-function FillGridTile(x, y, color) {
-    Canvas.strokeStyle = '';
-    Canvas.fillStyle = color;
-    Canvas.fillRect(x * GridTileWidth, y * GridTileHeight, GridTileWidth, GridTileHeight);
-}
-
 function DrawPixel(x, y, color) {
     Canvas.strokeStyle = '';
     Canvas.fillStyle = color;
